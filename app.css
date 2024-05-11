@@ -1,0 +1,136 @@
+  /* Import Font Awesome for icons */
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+body {
+  background-color: #deeeff;
+}
+
+.profile-card {
+  /* background-color: #666; */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  width: 100%; /* take up full width of the screen */
+  border-radius: 52px;
+  /* border: 10px solid #000000; */
+  padding: 20px;
+  /* background-color: rgb(131, 236, 255); */
+  box-sizing: border-box; /* include padding and border in the total width */
+  margin:  auto; /* center the card horizontally */
+  max-width: 800px; /* limit the maximum width of the card */
+  height: auto; /* adjust height proportionately */
+}
+  
+  .container-content {
+    padding: 20px;
+    /* position: relative; */
+  }
+
+.card-text {
+    float: left;
+    width: 70%;
+    flex-basis: 80%;
+  }
+
+  .card-image {
+    flex-basis: 30%;
+  position: relative;
+  overflow: hidden; /* crop the image if it's too tall */
+  }
+
+  .card-image img {
+    width: 100%;
+    max-width: 250px; /* limit the maximum width of the card */
+  height: auto; /* maintain aspect ratio */
+  }
+
+  .projects{
+    text-align: center;
+    
+  }
+  .custom-hr {
+    border: 0;
+    height: 7px;
+    background-color: blue;
+  }
+
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #333; /* Change the icon color as desired */
+  font-size: 60px; /* Adjust the icon size as needed */
+  margin: 0 60px; /* Add spacing between icons */
+  transition: color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.social-icons a:hover {
+  color: #666; /* Change the icon color on hover */
+}
+
+.socials{
+  text-align: center;
+}
+
+.warning-tape {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    black,
+    black 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  background-color: yellow;
+  height: 10px;
+  border: none;
+  box-shadow: 2px 2px 5px black;
+}
+
+.warning-tape:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    black,
+    black 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+  transform: scale(1.5) translate(-20px, -20px);
+  opacity: 0.3;
+  z-index: -1; /* Move the stripe pattern behind the text */
+}
+
+.warning-tape:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.1;
+  z-index: -1; /* Move the black background behind the text */
+}
+
+.warning-tape > span {
+  color: black;
+  position: relative;
+  z-index: 1; /* Move the text in front of the stripe pattern and black background */
+}
+.foot{
+  text-align: center;
+  background-color: rgb(249, 249, 181);
+}
